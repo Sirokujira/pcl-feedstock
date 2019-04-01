@@ -14,7 +14,7 @@ cmake -G "Ninja" ^
   -DWITH_PNG=OFF ^
   -DWITH_QHULL=ON ^
   -DWITH_QT=OFF ^
-  -DWITH_VTK=OFF ^
+  -DWITH_VTK=ON ^
   -DBUILD_global_tests=OFF ^
   -DBUILD_examples=OFF ^
   -DBUILD_tools=ON ^

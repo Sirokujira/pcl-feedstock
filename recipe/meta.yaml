@@ -14,7 +14,7 @@ source:
     - except.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: true  # [win and vc<14]
 
 requirements:
@@ -22,15 +22,23 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja  # [win]
+    - tbb
+    - tbb-devel
   host:
     - flann
     - eigen
     - boost-cpp
     - qhull
+    - tbb
+    - tbb-devel
+    - vtk==8.1.1
   run:
     - flann
     - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
     - qhull
+    - tbb
+    - tbb-devel
+    - vtk==8.1.1
 
 
 test:
